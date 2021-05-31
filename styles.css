@@ -1,5 +1,10 @@
-CSS
-h3 {
-  color: Blue;
 
+body {
+background-color: #aad8d3;
+}
+hr {
+height: 2px;
+width:30%;
+background-color:#EBA83A;
+border-style: :collapse;
 }
