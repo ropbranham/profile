@@ -1,89 +1,172 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Home</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="icon" href="favicon.ico">
-<link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Montserrat:wght@100&family=Sacramento&display=swap" rel="stylesheet">
+*{
+  box-sizing: border-box;
+}
+.bg-custom{
+ background: #efefef;
+  //background:#777;
+}
+/**************************/
+#header{
+  margin:15px 5px;
+  font-family: 'Handlee', cursive;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  height:280px;
+  background-image: url("https://www.sololearn.com/Uploads/header.jpg");
+  background-size: cover;
+  text-align:center;
+  border-radius:15px;
+}
+#img-caption{
+   // font-size: 25pt;
+    color: #3b464c;
+    padding-top: 0px;
+}
+#img-div{
+  width:98%;
+  max-width: 100%;
+  display: block;
+  height:auto;
+  margin:auto;
+  //background:white;
+}
+#image img{
+  max-width:100%;
+  /*this is the only way to make image responsive inside the flexbox*/
+  margin:auto;
+  display: block;
+  border:6px solid #fff;
+  border-radius:50%;
+  
+}
+#image{
+  /*responsive*/
+  max-width: 99%;
+  height: auto;
+      /* */ 
+  /*centerized*/
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+       /* */
+  
+}
+/********************************/
+#about-me{
+  font-family: 'Handlee', cursive;
+  border-radius:15px;
+}
+#about-me h2, #my-codeing-schedule h2, #skills h2 , #my-media h2, #contact h2, #follow h2{
+  display:inline-block;
+  text-align:center;
+  border:5px dashed #20bcd5;
+  padding:20px 15px;
+  color:#20bcd5;
+  margin:auto 10px;
+}
+#about-me .content{
+  font-size:25px;
+}
+#about-me .right{
+  font-size:25px;
+}
+/*********************************/
+#my-codeing-schedule, #skills, #my-media , #contact, #follow{
+  margin:15px 5px;
+  font-family: 'Handlee', cursive;
+  border-radius:15px;
+  
+}
+tbody td h4{
+  font-size:30px;
+}
+table, th, td, thead {
+ border: 3px solid #cecece;
+ border-collapse: collapse;
+}
+/********************************/
+#skills ul h4{
+  font-size:30px;
+  margin-bottom:-4px;
+}
+#skills li{
+ // border:1px solid black;
+  margin:20px 5px 10px 5px ;
+}
+progress {
+    width: 70%;
+    height: 30px;
+    color: #3fb6b2;
+    background: #efefef;
+    margin-top:0px;
+}
+progress::-webkit-progress-bar {
+    background: #efefef;
+}
+progress::-webkit-progress-value {
+    background: #3fb6b2;
+} 
+progress::-moz-progress-bar {
+    color: #3fb6b2;
+    background: #efefef;
+}
+/********************************/
+#my-media iframe{
+  border:5px solid #3fb6b2;
+}
+#survey-form input, #survey-form #texbox{
+background-color :#f0f0f0; 
 
-
-  </head>
-  <body>
-
-
-    <div class="Topcontainer">
-
-      <h1> Hi I'm Rop Branham </h1>
-      <h3> a Software Engineer</h3>
-      <img class="https://images.pexels.com/photos/574071/pexels-photo-574071.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" height="200" width="200"alt="Cloud1 image" >
-
-
-<img class="secondcloudimage"src="https://media.tenor.com/images/dd24ae8b6ca48cf05c5068c1a100381e/tenor.gif" height="200" width="300"alt="AI image">
-
-         <img class="mountain"src="https://media.tenor.com/images/dd24ae8b6ca48cf05c5068c1a100381e/tenor.gif" width="500" height="400"alt="Robot image" />
-    </div>
-    <div class="middle-container">
-
-      <div class="profile">
-        <img src="images/Ropcircle.png" height="150" width="150"alt="Rop Photo">
-        <h2>Hello.</h2>
-        <p class="intro"> intro"Lorem ipsum dolor sit amet, vitae volutpat, dui conubia, dolor urna. Non auctor, montes nulla distinctio.</p>
-      </div>
-      <hr>
-
-      <div class="skills">
-        <h2>My Skills.</h2>
-        <div class="skill-row">
-          <img class="webskill" src="images/world.jpg" alt="world image">
-          <h3>Software Engineer Skills</h3>
-          <p>Lorem ipsum dolor sit amet, quis in duis, iaculis id felis. Consectetuer vestibulum, nunc urna lectus, erat ligula. Hendrerit nam, lectus ante, ut lorem eros.</p>
-        </div>
-        <div class="skill-row">
-          <img class="gisskills" src="https://images.pexels.com/photos/574071/pexels-photo-574071.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" height="200" width="300"alt="gis image">
-          <h3>GIS Skills</h3>
-          <p>Lorem ipsum dolor sit amet, mauris sed consectetuer. Etiam et eu, bibendum interdum, lacus quis mauris. Curabitur wisi, quisque vel eu, rutrum nam.</p>
-        </div>
-        <div class="skill-row">
-          <img class="businessdev" src=https://images.pexels.com/photos/574071/pexels-photo-574071.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" height="200" width="300"alt="gis image">
-          <h3>Business Development Skills</h3>
-          <p>Lorem ipsum dolor sit amet, mauris sed consectetuer. Etiam et eu, bibendum interdum, lacus quis mauris. Curabitur wisi, quisque vel eu, rutrum nam.</p>
-        </div>
-        <div class="skill-row">
-          <img class="socialmedia" src="https://images.pexels.com/photos/574071/pexels-photo-574071.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"height="200" width="300" alt="gis image">
-          <h3>Social Media Skills</h3>
-          <p>Lorem ipsum dolor sit amet, mauris sed consectetuer. Etiam et eu, bibendum interdum, lacus quis mauris. Curabitur wisi, quisque vel eu, rutrum nam.</p>
-        </div>
-      </div>
-      <hr>
-      <div class="contact-me">
-        <h2>Get In Touch</h2>
-        <div class="links">
-            <h3>Links</h3>
-                       <p><a href="index.html">Home</a></p>
-                       <p><a href="project.html">Profile</a></p>
-                       <p><a href="workinprogress.html">Work in Progress</a></p>
-                       <p><a href="contact.html">Contact me</a></p>
-                       <p><a href="profile.html">Contact me</a></p>
-  </div>
-        <p class="contact-message">Lorem ipsum dolor sit amet, in quis, aenean amet. Phasellus sodales, tellus donec dui, ornare erat.</p>
-        <a class="btn" href="ropbranham@gmail.com">CONTACT ME</a>
-      </div>
-    </div>
-
-
-    <div class="bottom-container">
-      <a class="footer-link" href="https://www.linkedin.com/">LinkedIn</a>
-      <a class="footer-link" href="https://twitter.com/">Twitter</a>
-      <a class="footer-link" href="https://www.appbrewery.co/">Website</a>
-      <p>© 2018 Name Surname.</p>
-    </div>
-
-
-
-
-
-
-
-  </body>
-</html>
+}
+::placeholder {
+  color: rgb(128, 128, 128);
+  font-weight:bold;
+  font-family:'Arial', sans-serif;
+  font-size: 15px;
+}
+#survey-form button[type="submit"]{
+  color:#FFF;
+  background:#3fb6b2;
+  border:1px solid #3fb6b2;
+  font-size:20px;
+  font-weight:800;
+  padding:10px 10px;
+  margin-top:10px;
+  border-radius:5px;
+}
+#survey-form button[type="submit"]:hover, #survey-form button[type="submit"]:active{
+  color:#fff;
+  background-color: #43a09d;
+  border:1px solid #43a09d;
+  box-shadow:none;
+}
+/***************************/
+#follow a:hover{
+   text-decoration: none;
+}
+.hvr-grow{
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+}
+.hvr-grow:hover, .hvr-grow:focus, .hvr-grow:active {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+#follow img:hover{
+  opacity:0.6;
+}
+#foot{
+  font-family: 'Handlee', cursive;
+  color:gray;
+  font-size:18px;
+  margin-top:0px;
+}
