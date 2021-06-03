@@ -1,256 +1,174 @@
-body {background-color: #E4F9F5;
-  margin: 0;
-text-align: center;
-font-family: 'Merriweather', serif;
-color: #405140E;
+
+
+*{
+  box-sizing: border-box;
 }
-/* Style inputs with type="text", select elements and textareas */
-input[type=text], select, textarea {
-  width: 50%; /* Full width */
-  padding: 12px; /* Some padding */
-  border: 1px solid #ccc; /* Gray border */
-  border-radius: 4px; /* Rounded borders */
-  box-sizing: border-box; /* Make sure that padding and width stays in place */
-  margin-top: 6px; /* Add a top margin */
-  margin-bottom: 16px; /* Bottom margin */
-  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+.bg-custom{
+ background: #efefef;
+  //background:#777;
 }
-
-/* Style the submit button with a specific background color etc */
-input[type=submit] {
-  background-color: #04AA6D;
-  color: white;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
+/**************************/
+#header{
+  margin:15px 5px;
+  font-family: 'Handlee', cursive;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  height:280px;
+  background-image: url("https://www.sololearn.com/Uploads/header.jpg");
+  background-size: cover;
+  text-align:center;
+  border-radius:15px;
 }
-
-/* When moving the mouse over the submit button, add a darker green color */
-input[type=submit]:hover {
-  background-color: #45a049;
+#img-caption{
+   // font-size: 25pt;
+    color: #3b464c;
+    padding-top: 0px;
 }
-
-/* Add a background color and some padding around the form */
-.container {
-  border-radius: 5px;
-  background-color: #f2f2f2;
-  padding: 20px;
-}/* Style inputs with type="text", select elements and textareas */
-input[type=text], select, textarea {
-  width: 100%; /* Full width */
-  padding: 12px; /* Some padding */
-  border: 1px solid #ccc; /* Gray border */
-  border-radius: 4px; /* Rounded borders */
-  box-sizing: border-box; /* Make sure that padding and width stays in place */
-  margin-top: 6px; /* Add a top margin */
-  margin-bottom: 16px; /* Bottom margin */
-  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+#img-div{
+  width:98%;
+  max-width: 100%;
+  display: block;
+  height:auto;
+  margin:auto;
+  //background:white;
 }
-
-/* Style the submit button with a specific background color etc */
-input[type=submit] {
-  background-color: #04AA6D;
-  color: white;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
+#image img{
+  max-width:100%;
+  /*this is the only way to make image responsive inside the flexbox*/
+  margin:auto;
+  display: block;
+  border:6px solid #fff;
+  border-radius:50%;
+  
 }
-
-/* When moving the mouse over the submit button, add a darker green color */
-input[type=submit]:hover {
-  background-color: #45a049;
+#image{
+  /*responsive*/
+  max-width: 99%;
+  height: auto;
+      /* */ 
+  /*centerized*/
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+       /* */
+  
 }
-
-/* Add a background color and some padding around the form */
-.container {
-  border-radius: 5px;
-  background-color: #f2f2f2;
-  padding: 20px;
+/********************************/
+#about-me{
+  font-family: 'Handlee', cursive;
+  border-radius:15px;
 }
-
-h1 {
-  font-family: 'Sacramento', cursive;
-  font-style: 5.625rem;
-  color: #66bfbf;
-  font-weight: bold;
+#about-me h2, #my-codeing-schedule h2, #skills h2 , #my-media h2, #contact h2, #follow h2{
+  display:inline-block;
+  text-align:center;
+  border:5px dashed #20bcd5;
+  padding:20px 15px;
+  color:#20bcd5;
+  margin:auto 10px;
 }
-
-.p {
-  line-height: 1.5;
+#about-me .content{
+  font-size:25px;
 }
-
-hr{
-  border: dotted;
-  color: #EAF6F6 6px;
-  width: 5%;
-  margin: 100px auto;
-  border-bottom: none;
+#about-me .right{
+  font-size:25px;
 }
-
-h2 {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 2.5rem;
-  color: #66bfbf;
-  padding-bottom: 10px;
+/*********************************/
+#my-codeing-schedule, #skills, #my-media , #contact, #follow{
+  margin:15px 5px;
+  font-family: 'Handlee', cursive;
+  border-radius:15px;
+  
 }
-
-h3 {
-  font-family: "Montserrat", sans-serif;
-  color: #11999E;
+tbody td h4{
+  font-size:30px;
 }
-
-
-a {
-  color: #11999E;
-  font-family: Montserrat;
-  margin: 10px 20px;
-  text-decoration: none;
+table, th, td, thead {
+ border: 3px solid #cecece;
+ border-collapse: collapse;
 }
-a:hover{
-  color: #black;
+/********************************/
+#skills ul h4{
+  font-size:30px;
+  margin-bottom:-4px;
 }
-
-
-.firstcloudimage {
-  position: absolute;
-  top: 30px;
-  left: 1200px;
+#skills li{
+ // border:1px solid black;
+  margin:20px 5px 10px 5px ;
 }
-
-.secondcloudimage {
-  position: absolute;
-  top: 41.5px;
-  left: 242px;
+progress {
+    width: 70%;
+    height: 30px;
+    color: #3fb6b2;
+    background: #efefef;
+    margin-top:0px;
 }
-
-.Topcontainer {
-
-padding-top:  100px;
-  position: relative;
+progress::-webkit-progress-bar {
+    background: #efefef;
 }
-
-.mountain {
-  margin-top: 10px;
-margin-bottom: 50px;
-  }
-
-.intro {
-width: 30%;
-margin: auto;
+progress::-webkit-progress-value {
+    background: #3fb6b2;
+} 
+progress::-moz-progress-bar {
+    color: #3fb6b2;
+    background: #efefef;
+}
+/********************************/
+#my-media iframe{
+  border:5px solid #3fb6b2;
+}
+#survey-form input, #survey-form #texbox{
+background-color :#f0f0f0; 
 
 }
-.profile{
-    line-height: 1.5;
+::placeholder {
+  color: rgb(128, 128, 128);
+  font-weight:bold;
+  font-family:'Arial', sans-serif;
+  font-size: 15px;
 }
-.container-article {
-  text-align: left;
-  line-height: 1.5;
+#survey-form button[type="submit"]{
+  color:#FFF;
+  background:#3fb6b2;
+  border:1px solid #3fb6b2;
+  font-size:20px;
+  font-weight:800;
+  padding:10px 10px;
+  margin-top:10px;
+  border-radius:5px;
 }
-
-
-
-.webskill {
-  width: 25%;
-float: right;
-margin-left: 30px;
-
+#survey-form button[type="submit"]:hover, #survey-form button[type="submit"]:active{
+  color:#fff;
+  background-color: #43a09d;
+  border:1px solid #43a09d;
+  box-shadow:none;
 }
-.businessdev {
-width: 25%;
-float: right;
+/***************************/
+#follow a:hover{
+   text-decoration: none;
 }
-
-.gisskills {
-  width: 25%;
-float: left;
-margin-right: 30px;
-  }
-
-
-
-  .socialmedia {
-    width: 25%;
-    margin-right: 30px;
-    float: left;
-  }
-.skill-row {
-  line-height: 2;
-  width: 50%;
-  margin: auto;
-  margin-top: 100px auto 100px auto;
-  text-align: left;
+.hvr-grow{
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
 }
-
-.Ropcircle {
-
+.hvr-grow:hover, .hvr-grow:focus, .hvr-grow:active {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
 }
-
-.GISskillsimage {
-  width: 25%;
-  height: 25%
+#follow img:hover{
+  opacity:0.6;
 }
-
-.socialmediaimage {
-  width: 25%;
-  height: 25%
+#foot{
+  font-family: 'Handlee', cursive;
+  color:gray;
+  font-size:18px;
+  margin-top:0px;
 }
-
-.businessdevelopmetimage {
-  width: 25%;
-  height: 25%
-}
-
-.middle-container {
-margin: 100px 0;
-}
-
-.bottom-container {
-background-color: #66bfbf;
-padding: 50px 0 20px;
-}
-
-  .contact-message{
-    width:100%;
-    margin-left: 40px auto 60px auto;
-    text-align: center;
-
-  }
-.links{
-  color:black
-}
-.btn {
-  margin-top: 60px;
-
-}.btn {
-  background: #34d99c;
-  background-image: -webkit-linear-gradient(top, #34d99c, #2b8bb8);
-  background-image: -moz-linear-gradient(top, #34d99c, #2b8bb8);
-  background-image: -ms-linear-gradient(top, #34d99c, #2b8bb8);
-  background-image: -o-linear-gradient(top, #34d99c, #2b8bb8);
-  background-image: linear-gradient(to bottom, #34d99c, #2b8bb8);
-  -webkit-border-radius: 28;
-  -moz-border-radius: 28;
-  border-radius: 28px;
-  font-family: Arial;
-  color: #ffffff;
-  font-size: 20px;
-  padding: 10px 20px 10px 20px;
-  text-decoration: none;
-}
-
-.btn:hover {
-  background: #3cb0fd;
-  background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
-  background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
-  background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
-  background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
-  background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
-  text-decoration: none;
-}
-  .copyright {
-    color: #EAF6F6;
-    font-size: 0.75rem;
-    padding:20px 0;
-  }
