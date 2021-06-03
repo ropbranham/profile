@@ -2,55 +2,37 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Contact</title>
-    <style>
-  /* Style inputs with type="text", select elements and textareas */
-input[type=text], select, textarea {
-  width: 100%; /* Full width */
-  padding: 12px; /* Some padding */ 
-  border: 1px solid #ccc; /* Gray border */
-  border-radius: 4px; /* Rounded borders */
-  box-sizing: border-box; /* Make sure that padding and width stays in place */
-  margin-top: 6px; /* Add a top margin */
-  margin-bottom: 16px; /* Bottom margin */
-  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
-      }
+    <title>Contact me</title>
+    <!DOCTYPE html>
+    <html lang="en" dir="ltr">
+      <head>
+        <meta charset="utf-8">
+        <title>Contact</title>
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="icon" href="favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Montserrat:wght@100&family=Sacramento&display=swap" rel="stylesheet">
 
-/* Style the submit button with a specific background color etc */
-input[type=submit] {
-  background-color: #04AA6D;
-  color: white;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
 
-/* When moving the mouse over the submit button, add a darker green color */
-input[type=submit]:hover {
-  background-color: #45a049;
-}
 
-/* Add a background color and some padding around the form */
-.container {
-  border-radius: 5px;
-  background-color: #f2f2f2;
-  padding: 20px;
-}
-    </style>  
-      </head>
- 
-      <body>
+  </head>
+  <body>
+    <div class="Topcontainer">
 
-      <h3>Contact me</h3>
-            <form action="mailto:info@mycontact.com" method="post" enctype="text/plain">
-              <label for="fname">First Name</label>
-                <input type="text" id="fname" name="firstname" placeholder="Your name..">
+      <h1> Hi I'm Rop Branham </h1>
+      <h3> a Software Engineer</h3>
+      <img class="firstcloudimage"src="images/cloud.png" height="150" width="150"alt="Cloud1 image" >
 
-                    <label for="lname">Last Name</label>
-                  <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+<<h3>Contact me</h3>
+<div class="container">
+  <form action="action_page.php">
 
-                 <label for="country">Country</label>
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+    <label for="country">Country</label>
     <select id="country" name="country">
       <option value="australia">Australia</option>
       <option value="canada">Canada</option>
@@ -61,20 +43,30 @@ input[type=submit]:hover {
     <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
 
     <input type="submit" value="Submit">
+
   </form>
-
-  
-
+</div>
 
 
 
+      <div class="links">
+                <h3>Links</h3>
+                          <p><a href="index.html">Home</a></p>
+                           <p><a href="profile.html">Profile</a></p>
+                           <p><a href="projects.html">Projects</a></p>
+                           <p><a href="workinprogress.html">Work in Progress</a></p>
+                           
+      </div>
 
+    <div class="bottom-container">
+      <a class="footer-link" href="https://www.linkedin.com/in/rop-branham-matey-k-28665815/">LinkedIn</a>
+      <a style="color:#11999E"class="footer-link" href="https://twitter.com/ropkiplagat">Twitter</a>
+      <a class="footer-link" href="https://www.targetdigital.com.au/" target="_blank">Target Digital Media </a>
+      <a class="footer-link" href="https://aspiresupportsystems.com.au/" target="_blank">Aspire Support Systems</a>
 
-
-
-
-
-    <p><a href="index.html">Go back to homepage</a></p>
-    <p><a href="Contacts.html">Contact me</a></p>
+  <div class="footer">
+  <p>© 2021  Branham Rop</p>
+  </div>
+    </div>
   </body>
 </html>
